@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using log4net.Config;
 using log4net;
 using System.Data;
@@ -27,7 +24,7 @@ namespace Logger.Client
 
         private static void AddFakeData()
         {            
-            log.Info("Something something dark side.");
+            log.Info("Something, something, dark side.");
             log.Warn("It had a minor, hiccup. tee hee!");
             log.Error("Oh noes, you brokes teh interwebs!");
             log.Fatal("Crap! Someone really messed up this time. Some heads are going to roll!...or maybe just yours...");
