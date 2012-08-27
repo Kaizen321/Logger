@@ -9,12 +9,12 @@ namespace Logger.Client
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        static void Main(string[] args)
+        static void Main()
         {
             //Needed for log4net to read from the app.config
             XmlConfigurator.Configure();
                         
-            SQLiteDatabase db = new SQLiteDatabase(@"D:\Fun\Code\GitHub\Logger\Database\MyLogs.db;");
+            var db = new SQLiteDatabase(@"D:\Fun\Code\GitHub\Logger\Database\MyLogs.db;");
             //Clearing previous test data
             db.ClearTable("Log");
 
